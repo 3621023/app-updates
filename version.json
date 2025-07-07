@@ -1,1 +1,6 @@
-
+{
+  "version": "1.1",
+  "download_url": "https://example.com/downloads/YourApp_v1.1.exe",
+  "changelog": "1. 新增云更新功能\n2. 优化界面布局\n3. 修复已知问题",
+  "release_date": "2025-07-15"
+}
