@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>在线音乐播放器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f0f2f5;
+            padding: 50px;
+        }
+        .player {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <h1>在线音乐播放器</h1>
+        <audio id="audioPlayer" controls>
+            您的浏览器不支持音频播放
+        </audio>
+        <div>
+            <button onclick="playMusic()">播放音乐</button>
+        </div>
+    </div>
+
+    <script>
+        // 替换为你的音乐文件URL（支持MP3/WAV等格式）
+        const MUSIC_URL = "BY2 - 我知道.ogg";
+        
+        function playMusic() {
+            const player = document.getElementById("audioPlayer");
+            player.src = MUSIC_URL;
+            player.play();
+        }
+    </script>
+</body>
+</html>
